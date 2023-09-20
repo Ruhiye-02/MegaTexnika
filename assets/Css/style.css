@@ -1,0 +1,330 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: montserrat-regular;
+  src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: montserrat-bold;
+  src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Mulish-bold;
+  src: url(../fonts/staticmulish/Mulish-Bold.ttf);
+}
+@font-face {
+  font-family: Mulish-regular;
+  src: url(../fonts/staticmulish/Mulish-Regular.ttf);
+}
+.vectorimage {
+  position: absolute;
+  left: 0px;
+  top: 20%;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.headertop {
+  background-color: #FFC01F;
+}
+
+.adress {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 10px;
+}
+
+.adress p {
+  justify-self: start;
+}
+.adress .icons {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.adress .icons a {
+  color: #353535;
+}
+
+.navbar {
+  padding: 30px 0px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  align-items: center;
+}
+.navbar img {
+  justify-self: start;
+}
+.navbar .language {
+  justify-self: end;
+  cursor: pointer;
+}
+.navbar a {
+  color: #353535;
+  font-size: 14px;
+}
+
+.navlinks {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 100px;
+  padding-top: 40px;
+  padding-bottom: 260px;
+}
+
+.mainleft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 50px;
+  align-items: flex-start;
+}
+.mainleft h1 {
+  color: #596C72;
+  font-size: 50px;
+  line-height: 70px;
+  width: 20ch;
+  font-family: montserrat-bold;
+}
+.mainleft a {
+  color: #353535;
+  border: 1px solid #353535;
+  padding: 5px 30px;
+  border-radius: 30px;
+  font-family: Mulish-bold;
+}
+.mainleft p {
+  width: 450px;
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.mainrigth {
+  border: 10px solid white;
+  box-shadow: 0px 0px 10px 0px rgba(149, 149, 149, 0.25);
+  width: 670px;
+}
+.mainrigth img {
+  width: 100%;
+  height: 100%;
+}
+
+.container h2 {
+  font-family: montserrat-bold;
+  color: #596C72;
+}
+
+.categoriecards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2 auto);
+}
+.categoriecards .categoriecard1 {
+  width: 315px;
+  height: 352px;
+  color: #596C72;
+  box-shadow: 0px 0px 15px 0px rgba(164, 164, 164, 0.25), 0px 1px 7px 0px rgba(194, 194, 194, 0.25) inset;
+  margin-top: 40px;
+}
+.categoriecards .categoriecard1 h3 {
+  text-align: center;
+  font-family: montserrat-bold;
+  padding-top: 30px;
+}
+
+.aboutpage {
+  display: flex;
+  gap: 300px;
+  padding-top: 100px;
+}
+.aboutpage a {
+  color: #353535;
+  border: 1px solid #353535;
+  padding: 5px 30px;
+  border-radius: 30px;
+  font-family: Mulish-bold;
+  transition: 1s;
+}
+.aboutpage a:hover {
+  background-color: #FFC01F;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+.test img {
+  border: 10px solid white;
+  box-shadow: 0px 0px 10px 0px rgba(149, 149, 149, 0.25);
+}
+
+.aboutpage .tractorimage {
+  padding-top: 250px;
+}
+.aboutpage h1 {
+  font-family: montserrat-bold;
+  width: 24ch;
+  color: #596C72;
+}
+.aboutpage p {
+  width: 670px;
+  font-family: Mulish-regular;
+  color: #353535;
+}
+
+.maincontainer {
+  position: relative;
+  z-index: -1;
+}
+
+.vector2 img {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  z-index: -1;
+}
+
+.ellipse {
+  position: absolute;
+  right: 0px;
+  top: 65%;
+  z-index: -1;
+}
+
+.ellipse::after {
+  content: url(../images/Ellipse\ 9.png);
+  position: absolute;
+  right: 80%;
+  top: 50%;
+  z-index: -1;
+}
+
+.texnikalar h2 {
+  padding: 130px 0px 50px;
+}
+
+.techniquecard1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 0px 7px 0px rgba(149, 149, 149, 0.25);
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.techniquecard1 h3 {
+  font-family: montserrat-bold;
+  font-size: 18px;
+}
+.techniquecard1 h4 {
+  font-family: montserrat-regular;
+}
+.techniquecard1 h3, .techniquecard1 h4 {
+  color: #596C72;
+  padding-left: 10px;
+}
+.techniquecard1 p {
+  color: #B0ADAD;
+  padding-left: 10px;
+}
+.techniquecard1 .price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.techniquecard1 .price span {
+  color: #FFC01F;
+  padding-left: 150px;
+  font-family: montserrat-bold;
+}
+
+.techniquecards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+
+.techniquecard1 a, .seeall a {
+  color: #353535;
+  border: 1px solid #353535;
+  border-radius: 30px;
+  font-family: Mulish-bold;
+  text-align: center;
+  margin: 30px 15px;
+  padding: 5px;
+  transition: 1s;
+}
+.techniquecard1 a:hover, .seeall a:hover {
+  background-color: #FFC01F;
+}
+
+.seeall {
+  text-align: center;
+  padding: 50px;
+  margin-top: 20px;
+}
+.seeall a {
+  font-size: 12px;
+  padding: 5px 18px;
+}
+
+.marks h2 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.logos {
+  padding: 60px 0px;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  justify-content: space-between;
+}
+
+.newscard1 {
+  box-shadow: 0px 0px 7px 0px rgba(149, 149, 149, 0.25);
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.newscard1 i {
+  color: #69768B;
+}
+.newscard1 p, .newscard1 h4, .newscard1 span {
+  font-family: Mulish-regular;
+  padding-left: 20px;
+}
+.newscard1 p, .newscard1 span {
+  color: #69768B;
+}
+
+.date {
+  display: flex;
+  padding-top: 50px;
+  gap: 200px;
+  padding-bottom: 18px;
+}
+
+.newscards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 30px;
+}/*# sourceMappingURL=style.css.map */

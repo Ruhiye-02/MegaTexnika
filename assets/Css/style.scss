@@ -1,0 +1,388 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+$primarycolor :#353535;
+$textcolor: #596C72;
+$orangecolor:#FFC01F;
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Mulish-bold;
+    src: url(../fonts/staticmulish/Mulish-Bold.ttf);
+}
+
+@font-face {
+    font-family: Mulish-regular;
+    src: url(../fonts/staticmulish/Mulish-Regular.ttf);
+}
+
+.vectorimage {
+    position: absolute;
+    left: 0px;
+    top: 20%;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.headertop {
+    background-color: $orangecolor;
+}
+
+.adress {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 10px;
+}
+
+.adress {
+    p {
+        justify-self: start;
+    }
+
+    .icons {
+        justify-self: end;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        a {
+            color: $primarycolor;
+        }
+    }
+}
+
+.navbar {
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+
+    img {
+        justify-self: start;
+    }
+
+    .language {
+        justify-self: end;
+        cursor: pointer;
+    }
+
+    a {
+        color: $primarycolor;
+        font-size: 14px;
+    }
+}
+
+.navlinks {
+    display: grid;
+    grid-template-columns: repeat(6, auto)
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 100px;
+    padding-top: 40px;
+    padding-bottom: 260px;
+}
+
+
+.mainleft {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+    align-items: flex-start;
+
+
+    h1 {
+        color: $textcolor;
+        font-size: 50px;
+        line-height: 70px;
+        width: 20ch;
+        font-family: montserrat-bold;
+    }
+
+    a {
+        color: $primarycolor;
+        border: 1px solid #353535;
+        padding: 5px 30px;
+        border-radius: 30px;
+        font-family: Mulish-bold;
+
+    }
+
+    p {
+        width: 450px;
+        line-height: 21px;
+        font-size: 14px;
+    }
+}
+
+.mainrigth {
+    border: 10px solid white;
+    box-shadow: 0px 0px 10px 0px rgba(149, 149, 149, 0.25);
+    width: 670px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.container {
+    h2 {
+
+        font-family: montserrat-bold;
+        color: $textcolor;
+
+    }
+}
+
+.categoriecards {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2 auto);
+
+    .categoriecard1 {
+        width: 315px;
+        height: 352px;
+        color: $textcolor;
+        box-shadow: 0px 0px 15px 0px rgba(164, 164, 164, 0.25), 0px 1px 7px 0px rgba(194, 194, 194, 0.25) inset;
+        margin-top: 40px;
+
+        h3 {
+            text-align: center;
+            font-family: montserrat-bold;
+            padding-top: 30px;
+        }
+    }
+}
+
+.aboutpage {
+    display: flex;
+    gap: 300px;
+
+    padding-top: 100px;
+
+    a {
+        color: $primarycolor;
+        border: 1px solid #353535;
+        padding: 5px 30px;
+        border-radius: 30px;
+        font-family: Mulish-bold;
+        transition: 1s;
+        
+    }
+
+    a:hover {
+        background-color: $orangecolor;
+       
+    }
+
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+
+    img {
+        border: 10px solid white;
+        box-shadow: 0px 0px 10px 0px rgba(149, 149, 149, 0.25);
+    }
+}
+
+.aboutpage {
+    .tractorimage {
+        padding-top: 250px;
+       
+    }
+
+    h1 {
+        font-family: montserrat-bold;
+        width: 24ch;
+        color: $textcolor;
+    }
+
+    p {
+        width: 670px;
+        font-family: Mulish-regular;
+        color: $primarycolor;
+    }
+}
+
+.maincontainer {
+    position: relative;
+    z-index: -1;
+    
+}
+
+.vector2 {
+    img {
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        z-index: -1;
+    }
+}
+
+.ellipse {
+    position: absolute;
+    right: 0px;
+    top: 65%;
+    z-index: -1;
+}
+.ellipse::after{
+   content: url(../images/Ellipse\ 9.png);
+   position: absolute;
+   right: 80%;
+   top: 50%;
+   z-index: -1;
+}
+
+
+.texnikalar{
+    h2{
+       padding: 130px 0px 50px;
+    }
+}
+
+.techniquecard1{
+display: flex;
+flex-direction: column;
+gap: 20px;
+box-shadow: 0px 0px 7px 0px rgba(149, 149, 149, 0.25);
+margin-top: 20px;
+border-radius: 5px;
+
+h3{
+    font-family: montserrat-bold;
+    font-size: 18px;
+    
+}
+h4{
+    font-family: montserrat-regular;
+}
+h3,h4{
+    color: $textcolor;
+    padding-left: 10px;
+}
+p{
+    color:#B0ADAD;
+    padding-left: 10px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    span{
+ color: $orangecolor;
+ padding-left: 150px;
+ font-family: montserrat-bold;
+    }
+   
+}
+}
+.techniquecards{
+    display: grid ;
+    grid-template-columns: repeat(4,auto);
+    gap: 20px;
+}
+
+.techniquecard1,.seeall{
+        a {
+            color: $primarycolor;
+            border: 1px solid #353535;
+            border-radius: 30px;
+            font-family: Mulish-bold;
+            text-align: center;
+            margin: 30px 15px;
+            padding: 5px;
+            transition: 1s;
+        }
+        a:hover{
+            background-color: $orangecolor;
+        }
+}
+.seeall{
+    text-align: center;
+    padding: 50px ;
+    margin-top: 20px;
+    a{
+        font-size: 12px;
+        padding: 5px 18px;
+        
+    }
+}
+
+.marks{
+    h2{
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+.logos{
+    padding: 60px 0px;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    justify-content: space-between;
+}
+
+
+.newscard1 {
+ 
+box-shadow: 0px 0px 7px 0px rgba(149, 149, 149, 0.25);
+border-radius: 5px;
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+gap: 40px;
+i{
+    color: #69768B;
+}
+p,h4,span{
+    font-family: Mulish-regular;
+    padding-left: 20px;
+}
+p,span{
+    color: #69768B;
+}
+}
+
+
+.date{
+    display: flex;
+    padding-top: 50px;
+    gap: 200px;
+    padding-bottom: 18px;
+}
+.newscards{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+   
+}
+
