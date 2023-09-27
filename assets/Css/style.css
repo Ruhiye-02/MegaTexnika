@@ -136,7 +136,7 @@
   height: 100%;
 }
 
-.container h2 {
+h2 {
   font-family: montserrat-bold;
   color: #596C72;
 }
@@ -200,28 +200,12 @@
 
 .maincontainer {
   position: relative;
-  z-index: -1;
 }
 
 .vector2 img {
   position: absolute;
   top: 50%;
   right: 0px;
-  z-index: -1;
-}
-
-.ellipse {
-  position: absolute;
-  right: 0px;
-  top: 65%;
-  z-index: -1;
-}
-
-.ellipse::after {
-  content: url(../images/Ellipse\ 9.png);
-  position: absolute;
-  right: 80%;
-  top: 50%;
   z-index: -1;
 }
 

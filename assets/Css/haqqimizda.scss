@@ -1,0 +1,59 @@
+$primarycolor :#353535;
+$textcolor: #596C72;
+$orangecolor: #FFC01F;
+
+.gohomepage {
+    display: flex;
+    gap: 7px;
+    padding-top: 10px;
+    padding-left: 50px;
+    
+
+    a {
+        text-decoration: none;
+        color: #ADADAD;
+        font-family: Mulish-regular;
+        font-size: 12px;
+       
+
+    }
+    a:hover {
+        color: #596C72;
+    }
+
+    p {
+        color: #596C72;
+
+    }
+}
+
+.aboutussection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+
+    h2 {
+        font-size: 80px;
+        font-family: Mulish-bold;
+
+    }
+
+    span {
+        color: $orangecolor;
+
+    }
+
+    p {
+        font-size: 14px;
+        font-family: Mulish-regular;
+        max-width: 33%;
+    }
+}
+
+ 
+
+
+
