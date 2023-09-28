@@ -1,1 +1,53 @@
-/*# sourceMappingURL=Texnikalar.css.map */
+.gohomepage {
+  display: flex;
+  gap: 7px;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+.gohomepage a {
+  text-decoration: none;
+  color: #ADADAD;
+  font-family: Mulish-regular;
+  font-size: 12px;
+}
+.gohomepage a:hover {
+  color: #596C72;
+}
+.gohomepage p {
+  color: #596C72;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.techniquelist {
+  padding-top: 30px;
+}
+.techniquelist ul {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 30px;
+}
+.techniquelist ul li {
+  list-style-type: none;
+}
+.techniquelist ul a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Mulish-bold;
+  color: #596C72;
+  padding: 9px 10px;
+}
+.techniquelist ul a:hover {
+  background-color: #FFC01F;
+  border-radius: 30px;
+  z-index: 2;
+}
+
+.techniquecards {
+  padding: 40px 40px 0px 40px;
+}/*# sourceMappingURL=Texnikalar.css.map */
